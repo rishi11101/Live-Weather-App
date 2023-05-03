@@ -1,0 +1,48 @@
+@media screen and (max-width:450px){
+
+    h1{
+        margin-top: 3rem;
+        font-size: 1.7rem;
+    }
+
+    .container{
+        width: 90vw;
+    }
+
+    .tab{
+        font-size: 0.8rem;
+    }
+
+    .city-name p{
+        font-size: 1.5rem;
+    }
+
+    .description{
+        font-size: 1.2rem;
+    }
+
+    .temperature{
+        font-size: 2.2rem;
+    }
+
+    .parameter-container{
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+    .parameter{
+        width: 85vw;
+        max-width: 90vw;
+    }
+
+    form input{
+        width: 80vw;
+    }
+
+    .grant-location-container p:nth-child(2){
+        font-size: 1.5rem;
+    }
+    .grant-location-container p:nth-child(3){
+        font-size: 0.9rem;
+    }
+
+}

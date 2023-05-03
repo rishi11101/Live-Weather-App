@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&family=Rubik:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', 'sans-serif';
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+    color: #F9F7F7;
+}
+
+h1{
+    font-family: 'Rubik', 'sans-serif';
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.container{
+    display: flex;
+    width: 36rem;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.tab-container{
+    margin-top: 3.7rem;
+    justify-content: space-between;
+}
+
+.tab{
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: 1.5px;
+    padding: 6px 10px;
+}
+
+.current-tab{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+}
+
+.main-weather-container{
+    flex-direction: column;
+}
+
+.grant-location-container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.grant-location-container img{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    appearance: none;
+    border: none;
+    color: #F9F7F7;
+    background-color: #3F72AF;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.6rem 1.8rem;
+}
+
+.grant-location-container p:nth-child(2){
+    font-size: 1.75rem;
+}
+.grant-location-container p:nth-child(3){
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+form{
+    display: none;
+    margin-top: 5rem;
+}
+
+form input{
+    color: #F9F7F7;
+    border: none;
+    border-radius: 10px;
+    width: 30rem;
+    height: 2.5rem;
+    padding: 0 1.2rem;
+    background-color:rgba(219, 226, 239, 0.5);
+}
+
+form input::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+}
+form input:focus{
+    outline: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+form .btn{
+    padding: 0;
+    margin-left: 10px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.loading-container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loading-container p{
+    font-size: 1.2rem;
+}
+
+.weather-information-container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.5rem;
+}
+
+.city-name{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+}
+
+.city-name p{
+    font-size: 2rem;
+}
+.city-name img{
+    object-fit: contain;
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+.description{
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.weather-icon{
+    height: 5.8rem;
+    width: 5.8rem;
+}
+
+.temperature{
+    font-size: 2.8rem;
+}
+
+.parameter-container{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.parameter{
+    width: 13rem;
+    max-width: 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(219, 226, 239, 0.5);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.parameter p{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.parameter img{
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+
+/* main visibility class */
+.active{
+    display: flex;
+}
